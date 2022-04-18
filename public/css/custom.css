@@ -1,0 +1,78 @@
+nav div#left-bar {
+    background-color: #374050;
+    position: absolute;
+    width: 275px;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+nav div#left-bar ul li {
+    list-style: none;
+    color: #ffffff;
+}
+
+/* Products section */
+div.products button#open-create-dialog {
+    background-color: #46c6ff;
+    border: 0;
+    padding: 10px 20px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+div.products div.product-view-dialog,
+div.products div.product-edit-dialog,
+div.products div.product-create-dialog {
+    background-color: #374050;
+    padding: 10px;
+    position: absolute;
+    width: 430px;
+}
+
+div.products div.product-create-dialog div.modal-body form label,
+div.products div.product-edit-dialog div.modal-body form label,
+div.products div.product-view-dialog div.modal-header h4,
+div.products div.product-edit-dialog div.modal-header h4,
+div.products div.product-create-dialog div.modal-header h4 {
+    color: #ffffff;
+}
+
+div.products div.product-view-dialog div.modal-header span.close-modal,
+div.products div.product-edit-dialog div.modal-header span.close-modal,
+div.products div.product-create-dialog div.modal-header span.close-modal {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+div.products
+    div.product-create-dialog
+    div.modal-body
+    span.product-add-attribute,
+div.products div.product-edit-dialog div.modal-body span.product-add-attribute {
+    color: #46c6ff;
+    cursor: pointer;
+    border-bottom: 1px dashed;
+    display: block;
+    width: fit-content;
+}
+
+div.products div.product-edit-dialog div.modal-body span.remove-product-attr,
+div.products div.product-create-dialog div.modal-body span.remove-product-attr {
+    color: #ffffff;
+    /* font-size: 20px; */
+    /* font-weight: bold; */
+    cursor: pointer;
+}
+
+div.products tr.single-product {
+    cursor: pointer;
+}
+
+/* Global */
+
+.hide {
+    display: none !important;
+}
