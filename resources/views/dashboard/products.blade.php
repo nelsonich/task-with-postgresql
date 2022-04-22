@@ -3,6 +3,11 @@
 @section('content')
     <div class="container products">
         <div class="row">
+            @if ($errors->any())
+                {!! implode('', $errors->all('<div class="error mb-2">:message</div>')) !!}
+            @endif
+        </div>
+        <div class="row">
             <div class="col-md-8">
                 <table class="table">
                     <thead>

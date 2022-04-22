@@ -44,7 +44,10 @@ class ProductController extends Controller
             }
         }
 
-        $product->article = $article;
+        if ("admin" === config('products.role')) {
+            $product->article = $article;
+        }
+
         $product->name = $name;
         $product->status = $status;
         $product->data = json_encode($data);
@@ -58,7 +61,7 @@ class ProductController extends Controller
     public function edit(Request $request, $id)
     {
         $request->validate([
-            'article' => 'required',
+            'article' => 'required|unique:products,article,' . $id,
             'name' => 'required|min:10',
         ]);
 

@@ -76,3 +76,11 @@ div.products tr.single-product {
 .hide {
     display: none !important;
 }
+
+.error {
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 0 10px 25px;
+    font-weight: 600;
+    background-color: #bb083a;
+}
